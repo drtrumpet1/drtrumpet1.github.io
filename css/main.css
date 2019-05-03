@@ -1,0 +1,42 @@
+* { margin: 0; box-sizing: border-box; 
+} 
+
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: Georgia, serif;
+    color: #6495ED;
+}
+
+h1 {
+    font-size: 2em;
+    color: #DFDCE3;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 100%;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: #6495ED;
+    color: whitesmoke;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+    float: right;
+}
+
+footer {
+    font-size: 1em;
+}
