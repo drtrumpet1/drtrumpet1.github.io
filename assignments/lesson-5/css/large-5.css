@@ -1,0 +1,15 @@
+@media only screen and (min-width: 768px) {
+    li {
+        display: inline;
+    }
+    .forecast {
+        display: initial;
+        text-align: center;
+   }
+   img.fishing {
+       float: right;
+   }
+   div.weatherCenter {
+       float: right;
+   }
+}

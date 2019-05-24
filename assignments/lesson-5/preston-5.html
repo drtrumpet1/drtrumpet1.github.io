@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Potato Weather</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-5.css">
+    <link rel="stylesheet" href="css/large-5.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo" style="width:50px;height:50px;">
+        <div class="title"><h2>Potato Weather</h2>
+        <div class="motto">The Best Source For Idaho Weather</div>
+        </div>
+    </header>
+        <nav>
+            <div class="sitemenu"><ul>
+                <li class="home"><a href="home.html">Home</a></li>
+                <li class="preston active"><a href="preston.html">Preston</a></li>
+                <li class="sodasprings"><a href="sodasprings.html">Soda Springs</a></li>
+                <li class="fishhaven"><a href="fishhaven.html">Fish Haven</a></li>
+                <li class="stormcenter"><a href="stormcenter.html">Storm Center</a></li>
+                <li class="gallery"><a href="gallery.html">Gallery</a></li>
+            </ul>
+            </div>
+        </nav>
+    
+    <main>
+        <h1>Preston</h1>
+        <div class="weatherSummary">
+            <img class="outdoors" src="images/outdoors.jpg" alt="Outdoors">
+            <p class="summary">Weather Summary<br>
+                Currently:<br>
+                High:<br>
+                Wind Chill:<br>
+                Humidity:<br>
+                Wind Speed:<br>
+            </p>
+        </div>
+        <div class="forecast">
+            <h3>5 Day Forecast</h3>
+        </div>
+        <div class="flyfishing">
+            <img class="fishing" src="images/flyfishing.jpg" alt="Fly Fishing">        
+            <h2>Title</h2>
+            <h3>by author</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed diam ut arcu lobortis cursus. Quisque commodo lobortis lorem, imperdiet volutpat arcu mattis eget. Quisque pretium magna sed lacus viverra, nec molestie massa blandit. Suspendisse eu mauris purus. Nam vel interdum felis, vitae vehicula turpis. Donec ac massa est. Nulla at tincidunt massa. Etiam tincidunt lectus magna, vitae pellentesque lectus tempor ut.
+            </p>              
+        </div>
+
+    </main>
+    <footer>
+        <p>Contact Info</p>
+        <p><strong>Potato Weather</strong></p>
+        <p>123 Main St</p>
+        <p>Anytown, USA 12345</p>
+        <p>&#9742; (555) 555-5555</p>
+        <P>info@youremailhere.com</P>
+        <div id="weatherCenter" style="width:100%;height:400px;"></div>
+        <script>
+            function myMap() {
+            var mapProp= {
+              center:new google.maps.LatLng(51.508742,-0.120850),
+              zoom:5,
+            };
+            var map = new google.maps.Map(document.getElementById("weatherCenter"),mapProp);
+            }
+        </script>
+            
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsEeawG7LY_cq46QXpTtrJ0H9TqOAO_tg&callback=myMap">
+        </script>        
+    </footer>
+</body>
