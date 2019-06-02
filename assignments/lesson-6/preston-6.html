@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Potato Weather</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+        <img src="images/logo.png" alt="Logo" style="width:50px;height:50px;">
+        <div class="title"><h2>Potato Weather</h2>
+        <div class="motto">The Best Source For Idaho Weather</div>
+        </div>
+        </div>
+    </header>
+        <nav>
+            <div class="sitemenu"><button onclick="toggleNavMenu()">&#9776;</button><ul id="primaryNav" class="hide">
+                <li><a href="home.html">Home</a></li>
+                <li><a class="active" href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            </div>
+        </nav>
+    
+    <main>
+        <h1>Preston</h1>
+        <figure class="weatherSummary">
+            <img class="outdoors" src="images/hero.jpeg" alt="Outdoors" sizes="100vw" srcset="images/hero_450.jpg 450w, images/hero_900.jpg 900w">
+            <p class="summary">Weather Summary<br>
+                Currently: 73&#176;<br>
+                High: 78&#176;<br>
+                Wind Chill: 64&#176;<br>
+                Humidity: 46%<br>
+                Wind Speed: 12mph<br>
+            </p>
+        </figure>
+        <div class="forecast">
+            <h3>5 Day Forecast</h3>
+        </div>
+        <div class="flyfishing">
+            <img class="fishing" src="images/flyfishing.jpg" alt="Fly Fishing">        
+            <h2>Title</h2>
+            <h3>by author</h3>
+            <p>Lorem ipsum t lectus magna, vitae pellentesque lectus tempor ut.            
+            </p>              
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer">
+        <p>Contact Info</p>
+        <p><strong>Potato Weather</strong></p>
+        <p>525 S Center St</p>
+        <p>Rexburg, ID 83460</p>
+        <p>&#9742; (555) 555-5555</p>
+        <P>info@youremailhere.com</P>
+        </div>
+        <iframe 
+            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJBQgSNAALVFMRM97_K4Fy-GU&key=AIzaSyAsEeawG7LY_cq46QXpTtrJ0H9TqOAO_tg" allowfullscreen>
+        </iframe> 
+    </footer>
+        <div>
+            <p id="date">                
+            </p>
+        </div>      
+    
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/menu.js"></script>
+</body>
