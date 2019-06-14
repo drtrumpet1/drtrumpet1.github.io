@@ -1,0 +1,31 @@
+@media only screen and (min-width: 768px) {
+    li {
+        display: inline;
+    }
+    ul.hide {
+        display: inline-flex;
+    }
+    button {
+        display: none; 
+    }
+
+    .forecast {
+        display: initial;
+        text-align: center;
+   }
+   img.fishing {
+       float: right;
+   }
+   div.weatherCenter {
+       float: right;
+   }
+}
+
+div.footer {
+    float: right;
+}
+
+iframe {
+    width: 400px;
+    height: 400px;
+}
