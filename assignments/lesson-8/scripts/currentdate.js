@@ -21,4 +21,4 @@ if(mm<10) {
     mm = '0'+ mm
 } 
 
-document.getElementById("date").innerHTML=today = weekday[ww] + ", " + dd + mm + yyyy;
+document.getElementById("date").innerHTML=today = weekday[ww] + ", " + mm + "/" + dd + "/" + yyyy;

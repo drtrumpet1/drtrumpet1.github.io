@@ -9,22 +9,23 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Logo" style="width:50px;height:50px;">
-        <div class="title"><h2>Potato Weather</h2>
-        <div class="motto">The Best Source For Idaho Weather</div>
+        <img src="images/sunlogo.png" alt="Logo">
+        <div class="title"><h1>Potato Weather</h1>
+        <div class="motto"><h2>The Best Source For Idaho Weather</h2></div>
         </div>
     </header>
         <nav>
-            <div class="sitemenu"><ul>
+            <div class="sitemenu"><button onclick="toggleNavMenu()">&#9776;</button><ul id="primaryNav" class="hide">
                 <li><a href="home.html">Home</a></li>
-                <li><a href="preston-8.html">Preston</a></li>
+                <li><a href="preston.html">Preston</a></li>
                 <li><a href="sodasprings.html">Soda Springs</a></li>
                 <li><a href="fishhaven.html">Fish Haven</a></li>
-                <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                <li><a class="active" href="stormcenter.html">Storm Center</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
             </ul>
             </div>
@@ -54,9 +55,9 @@
             <input type="date" name="date"> 
 
             <div>
-            <label>Storm Type </label>
+            <label>Storm Type</label>
             <input list="stormlist" name="stormtype">
-                <datalist>
+                <datalist id="stormlist">                    
                     <option value="Flash Flood">
                     <option value="Hail">
                     <option value="Thunderstorm">
@@ -68,20 +69,22 @@
             <input type="range" id="severity" value="5" min="1" max="10" step="1"
             oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
             <span id="severityvalue">5</span>
-
+            
+            <div id="region">
             <label>Region          
                 <select name="region">
                     <option value="">Please Select</option>
                     <option value="Preston">Preston</option>
                     <option value="Soda Springs">Soda Springs</option>
                     <option value="Fish Haven">Fish Haven</option>
-                    </select>
-                </label> 
+                </select>
+            </label> 
+            </div>
 
-            <div>Are you currently in danger?</div>
-            <input type="radio" name="danger" value="yes" checked> Yes
-            <input type="radio" name="danger" value="maybe"> Maybe
-            <input type="radio" name="danger" value="no"> No
+            <div id="radio">Are you currently in danger?</div>
+            <input class="danger" type="radio" name="danger" value="yes" checked> Yes</br>
+            <input class="danger" type="radio" name="danger" value="maybe"> Maybe</br>
+            <input class="danger" type="radio" name="danger" value="no"> No</br>
          </fieldset>
 
          <fieldset>
