@@ -1,0 +1,139 @@
+ * {
+     font-family: 'Oswald', sans-serif;
+     text-align: center;
+ }
+
+/*--------HEADER--------*/ 
+
+header {
+    color: white;
+    background-color: #F78733;
+    border-width: 25px 0px;
+    border-color: #FC4A1A;
+    align-content: center;
+    display: inline-flex;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.head {
+    align-content: center;
+}
+
+div.title {
+    display: inline-block;
+    text-align: center;
+}
+
+/*----------NAV BAR----------*/
+
+nav {
+    background-color: #FC4A1A;
+}
+
+ul.hide {
+    display: none;
+}
+
+ul {
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        color: #4ABDAC;
+}
+
+li a {
+        display: block;
+}
+
+li a:hover {
+        background-color: #DFDCE3;
+}
+.active {
+    background-color: rgb(131, 33, 7);
+    color: white;
+}
+
+/*----------HERO IMAGE----------*/
+
+figure.weatherSummary {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+img.outdoors {
+    height: auto;
+    width: 80%;
+}
+p.summary {
+    position: absolute;
+    top: 8px;
+    left: 250px;
+    background-color: #F78733;
+    opacity: 0.75;
+}
+
+/*----------FORECAST--------*/
+
+.forecast {
+    display: none;
+}
+
+/*-----------MAIN PARAGRAPH---------*/
+
+img.fishing {
+    height: auto;
+    width: 60%;
+    margin: 0;
+
+}
+
+div.flyfishing {
+    display: inline-block;
+    width: 60%;
+    text-align: center;
+}
+
+/*-------------FOOTER---------------*/
+
+footer {
+    background-color: #4ABDAC;
+    color: white;
+    margin-top: 100px;
+}
+
+/*---------------FORM----------------*/
+
+form {
+    max-width: 480px;
+    margin: auto;
+}
+
+
+form fieldset {
+    border: none;
+    padding: 20px;    
+}
+
+legend {
+    padding: 10px;
+    font-size: .8rem;
+}
+
+label {
+    display: block;    
+}
+
+input {
+    margin-bottom: 20px;
+    padding: 7px;
+    border-radius: 4px;
+    width: 96%;
+}
+
+div#severity {
+    display: inline-flex;
+    padding-bottom: 8px;
+}
