@@ -8,6 +8,10 @@ body {
     color: #6495ED;
 }
 
+h1, h2 {
+    font-family: 'Gelasio', serif;
+}
+
 h1 {
     font-size: 2em;
     color: #DFDCE3;
