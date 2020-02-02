@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Preston | Potato Weather</title>
+    <meta name="author" content="J Robert Hatch | CIT230 BYU-Idaho">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="shortcut icon" href="sunlogo.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-4.css">
+    <link rel="stylesheet" href="css/medium-4.css">
+    <link rel="stylesheet" href="css/large-4.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/sunlogo.png" alt="Logo">
+        <div class="title"><h1>Potato Weather</h1>
+        <div class="motto"><h3>The Best Source For Idaho Weather</h3></div>
+        </div>
+    </header>
+
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html" class="active">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>            
+    </nav>
+    
+    <main>
+        <h1>Preston</h1> 
+        <section>      
+            <p>Hero Image / Weather Summary</p>
+        </section> 
+        <section>
+            <p>5-Day Forecast</p>
+        </section> 
+        <section>
+            <p>Article</p>
+        </section> 
+        <section>
+            <p>Contact Information</p>
+        </section> 
+    </main>
+
+   
+    <footer>
+        <div class="footerbar">
+            <p id="date"></p>
+        </div>          
+    </footer>
+    
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/menu.js"></script>
+</body>
