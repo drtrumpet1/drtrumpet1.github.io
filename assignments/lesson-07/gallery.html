@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Gallery | Potato Weather</title>
+    <meta name="author" content="J Robert Hatch | CIT230 BYU-Idaho">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+
+    <header>
+        <img src="images/sunlogo.png" alt="Logo">
+        <div class="title"><h1>Potato Weather</h1>
+        <div class="motto"><h3>The Best Source For Idaho Weather</h3></div>
+        </div>
+    </header>
+
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#" class="active">Gallery</a></li>
+        </ul>            
+    </nav>
+
+    <main>
+        <h2>Image Gallery</h2>
+        <div class="weatherGallery">
+            <figure>
+                <img src="images/fall.jpg" alt="Prairie Grasses">
+                <figcaption>Fall In Idaho</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/mountains.jpg" alt="Mountaintop">
+                <figcaption>Mountaintop Idaho</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/outdoors.jpg" alt="Mountains and Blue Skies">
+                <figcaption>Clear Skies Over Idaho</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/wintertime.jpg" alt="Winter">
+                <figcaption>Wintertime</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/river.jpg" alt="River">
+                <figcaption>Beautiful River</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/sunset.jpg" alt="Sunset">
+                <figcaption>Idaho At Sunset</figcaption>
+            </figure>
+        </div>
+    </main>
+    
+
+
+    <footer>
+        <div class="footer">
+        <p>Contact Info</p>
+        <p><strong>Potato Weather</strong></p>
+        <p>525 S Center St</p>
+        <p>Rexburg, ID 83460</p>
+        <p>&#9742; (555) 555-5555</p>
+        <P>info@youremailhere.com</P>
+        </div>
+        <iframe 
+            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJBQgSNAALVFMRM97_K4Fy-GU&key=AIzaSyAsEeawG7LY_cq46QXpTtrJ0H9TqOAO_tg" allowfullscreen>
+        </iframe> 
+        <p class=""></p>
+    </footer>
+        
+    <div class="footerbar">
+        <p id="date"></p>
+    </div> 
+    
+    <script src="javascript/menu.js"></script>
+    
+        
+</body>

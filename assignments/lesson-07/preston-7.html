@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Preston | Potato Weather</title>
+    <meta name="author" content="J Robert Hatch | CIT230 BYU-Idaho">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <div>
+        <span id="banner"></span>
+    </div>
+    <header>
+        <img src="images/sunlogo.png" alt="Logo">
+        <div class="title"><h1>Potato Weather</h1>
+        <div class="motto"><h3>The Best Source For Idaho Weather</h3></div>
+        </div>
+    </header>
+
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>            
+    </nav>
+    
+    <main>
+        <h1>Preston</h1>
+        <figure class="weatherSummary">
+            <img class="outdoors" src="images/hero.jpeg" alt="Outdoors" sizes="100vw" srcset="images/hero_450.jpg 450w, images/hero_900.jpg 900w">
+            <div class="summary">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="currentWeather">Sunny</span></p>
+                <p>Temperature: <span id="currentTemp">51</span>&deg;F</p>
+                <p>Humidity: <span id="humidity">41</span>%</p>
+                <p>Wind Speed: <span id="windSpeed">12</span>mph</p>
+                <p>Wind Chill: <span id="windChill"></span>&deg;F</p>
+            </div>
+        </figure>
+
+        <section class="forecast">
+            <h3>5 Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th><span id="day1"></span></th>
+                        <th><span id="day2"></span></th>
+                        <th><span id="day3"></span></th>
+                        <th><span id="day4"></span></th>
+                        <th><span id="day5"></span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="#" id="weathericon1" alt="Weather Icon"><br><span id="highTemp1"></span>&deg;F</td>
+                        <td><img src="#" id="weathericon2" alt="Weather Icon"><br><span id="highTemp2"></span>&deg;F</td>
+                        <td><img src="#" id="weathericon3" alt="Weather Icon"><br><span id="highTemp3"></span>&deg;F</td>
+                        <td><img src="#" id="weathericon4" alt="Weather Icon"><br><span id="highTemp4"></span>&deg;F</td>
+                        <td><img src="#" id="weathericon5" alt="Weather Icon"><br><span id="highTemp5"></span>&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div class="flyfishing">
+            <img class="fishing" src="images/flyfishing.jpg" alt="Fly Fishing">        
+            <h2>Idaho Fly Fishing</h2>
+            <h3>Steve Stuebner</h3>
+            <p>Fishing is open year-round on the Boise River. It’s a tailwater fishery with cold water coming off the bottom of Lucky Peak Reservoir. Water quality is clean, and there are plenty of nice rainbow trout to be caught in the urban section of the river. Idaho Angler provides guided fly fishing trips to help anglers cue into the right fly for the conditions and where to fish. Below Barber Park is a popular spot with pools and riffles, but there are a number of nice fish-holding pools right in the middle of the city.
+
+                    Brown trout can be caught farther downriver, west of Boise toward Eagle and Star. Next time, you’re doing in business in Boise, bring your fly rod and waders and give it a go! Subsurface fishing is usually best with nymphs and streamers.
+                    
+                    Trout also can be caught in the Boise River with a spin-cast set up using typical trout lures such as mepps spinners, panther martins and Thomas lures.           
+            </p>              
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+        <p>Contact Info</p>
+        <p><strong>Potato Weather</strong></p>
+        <p>525 S Center St</p>
+        <p>Rexburg, ID 83460</p>
+        <p>&#9742; (555) 555-5555</p>
+        <P>info@youremailhere.com</P>
+        </div>
+        <iframe 
+            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJBQgSNAALVFMRM97_K4Fy-GU&key=AIzaSyAsEeawG7LY_cq46QXpTtrJ0H9TqOAO_tg" allowfullscreen>
+        </iframe> 
+        <p class=""></p>
+    </footer>
+        
+    <div class="footerbar">
+        <p id="date"></p>
+    </div>      
+    
+    
+    <script src="javascript/menu.js"></script>
+    <script src="javascript/windchill.js"></script>
+        
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>WebFont.load({
+        google: {
+          families: ['Oswald']
+        }
+      });
+    </script>
+
+</body>

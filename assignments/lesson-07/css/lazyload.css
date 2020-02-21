@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+body {
+    font-family: Oswald; 
+    font-size: 14px;
+}
+
+main {
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+  article img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
