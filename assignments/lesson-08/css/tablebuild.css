@@ -1,7 +1,6 @@
 table {
-    font-family: 'Ubuntu', sans-serif;
-    width: 50%;
-    table-layout: fixed;
+    font-family: 'Ubuntu', sans-serif;    
+    margin: 0 auto;
     box-shadow: 10px 10px 10px grey; 
     text-align: center; 
     border-collapse: collapse;
@@ -43,6 +42,11 @@ table tr:nth-child(even) {
 table tr:nth-child(odd) {
     background-color: #E7F0ED;
 }
+
+tbody tr:nth-child(5) td:nth-child(1){
+    font-style: italic;
+   }
+   
 
 tfoot td {
     background-color: #628CA6;
