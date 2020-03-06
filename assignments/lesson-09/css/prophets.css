@@ -1,0 +1,61 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0 auto;
+    padding: 4px;
+}
+
+header {
+    margin: 5px auto;
+    background: #6495ED;    
+    color: rgb(0, 38, 66);
+    padding: 4px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    margin: 10px;
+}
+
+.cards section {
+    object-fit: cover;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    background-color: rgb(237, 239, 240);
+    border: 1px outset #002642;
+    background-image: linear-gradient(#EFEFEF, #EFEFEF, white);
+}
+
+.cards section img {
+    max-width: 100%;
+    box-shadow: 5px 5px 5px rgba(20, 19, 19, 0.493);
+}
+
+@media only screen and (min-width: 32em) {
+
+    .cards {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+        margin: 10px;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    .cards {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1em;
+        margin: 10px;
+    }
+}
